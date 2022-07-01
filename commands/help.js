@@ -6,8 +6,10 @@ exports.run = async (client, message) => {
   const commands = `create\`\` - 建立備份伺服器/群組 [建立備份ID稍微久一點 , 耐心等待]
  info <備份ID>\`\` - 查看備份ID資訊
  load <備份ID>\`\` - 讀取備份資訊執行!
- invite\`\` - 邀請備份Bot`;
- 
+ invite\`\` - 邀請備份Bot
+ about\`\` - 關於Bot`;
+  
+  
     
   const revised = commands
     .split("\n")

@@ -12,7 +12,7 @@ fs.readdir("./events/", (_err, files) => {
         if (!file.endsWith(".js")) return;
         const event = require(`./events/${file}`);
         let eventName = file.split(".")[0];
-        console.log(`👌 Event loaded: ${eventName}`);
+        console.log(`Event 已讀取: ${eventName}`);
         client.on(eventName, event.bind(null, client));
         delete require.cache[require.resolve(`./events/${file}`)];
     });
@@ -42,6 +42,6 @@ client.on("ready", async () => {
   console.log(`${client.user.username} 已上線`);
   client.user.setActivity({
     name: `.help | ${client.guilds.cache.size}個伺服器`,
-    type: "IDLE",
+    type: "PLAYING",
  });
 });
