@@ -6,7 +6,7 @@ const client = new Discord.Client();
 const config = require('./config.json');
 client.config = config;
 
-/* Load all events */
+/* 讀取全部 */
 fs.readdir("./events/", (_err, files) => {
     files.forEach((file) => {
         if (!file.endsWith(".js")) return;
@@ -20,7 +20,7 @@ fs.readdir("./events/", (_err, files) => {
 
 client.commands = new Discord.Collection();
 
-/* Load all commands */
+/* 讀取全部功能 */
 fs.readdir("./commands/", (_err, files) => {
     files.forEach((file) => {
         if (!file.endsWith(".js")) return;
@@ -31,7 +31,7 @@ fs.readdir("./commands/", (_err, files) => {
     });
 });
 
-// Login
+// Bot登入
 client.login(config.token);
 
 
