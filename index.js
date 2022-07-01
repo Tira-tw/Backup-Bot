@@ -42,6 +42,6 @@ client.on("ready", async () => {
   console.log(`${client.user.username} 已上線`);
   client.user.setActivity({
     name: `.help | ${client.guilds.cache.size}個伺服器`,
-    type: "IDLE",
+    type: "PLAYING",
  });
 });
