@@ -15,3 +15,7 @@
 > 📙支援Support :📙 https://discord.gg/FCtZJybggA <br>
 
 
+# 源代碼
+> [源代碼](https://github.com/Androz2091/backups-bot) <br>
+> [源代碼作者 [Androz2091]](https://github.com/Androz2091/) <br>
+> [代碼翻譯 [Tira-tw]](https://github.com/Tira-tw/)
