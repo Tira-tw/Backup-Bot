@@ -28,7 +28,7 @@ exports.run = async (client, message, args) => {
             
                 }).catch((err) => {
             
-                    if (err === '找不到備份')
+                    if (err === 'No backup found')
                         return message.channel.send('<:3523win11erroicon:992428262083022898> 找不到備份ID '+backupID+'!');
                     else
                         return message.author.send('<:3523win11erroicon:992428262083022898> 發生錯誤： '+(typeof err === 'string') ? err : JSON.stringify(err));
